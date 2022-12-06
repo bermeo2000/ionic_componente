@@ -4,11 +4,13 @@ import { google} from "google-maps";
 declare var google :google;
 
 @Component({
-  selector: 'app-mapa-google',
-  templateUrl: './mapa-google.page.html',
-  styleUrls: ['./mapa-google.page.scss'],
+  selector: 'app-google',
+  templateUrl: './google.page.html',
+  styleUrls: ['./google.page.scss'],
 })
-export class MapaGooglePage implements OnInit {
+export class GooglePage implements OnInit {
+
+ 
 
 @ViewChild('map')mapElement !: ElementRef;
 map: any;

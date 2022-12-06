@@ -26,6 +26,7 @@
     "@capacitor/keyboard": "4.1.0",
     "@capacitor/status-bar": "4.1.0",
     "@ionic/angular": "^6.1.9",
+    "@types/google-maps": "^3.2.3",
     "cordova-plugin-geolocation": "^4.1.0",
     "ionicons": "^6.0.3",
     "mapbox-gl": "^2.11.0",

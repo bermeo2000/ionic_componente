@@ -108,6 +108,10 @@ const routes: Routes = [
     path: 'mapa-google',
     loadChildren: () => import('./mapa-google/mapa-google.module').then( m => m.MapaGooglePageModule)
   },
+  {
+    path: 'google',
+    loadChildren: () => import('./google/google.module').then( m => m.GooglePageModule)
+  },
   //{
   //  path: 'folder/:id',
    // loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)

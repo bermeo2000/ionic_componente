@@ -33,6 +33,7 @@ export class AppComponent {
     { title: 'Toast', url: '/toast', icon: 'bulb' },
     { title: 'Slides', url: '/slides', icon: 'podium' },
     { title: 'Mapa', url: '/tabs', icon: 'podium' },
+    { title: 'mapa-google', url: 'mapa-google', icon: 'podium' },
 
 
   ];
