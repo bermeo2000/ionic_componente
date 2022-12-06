@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>infinite-scroll</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let item of list; let i = index">
+            <ion-avatar slot="start">
+                <img [src]="'https://picsum.photos/80/80?random=' + i" alt="avatar" />
+            </ion-avatar>
+            <ion-label>Item {{ i + 1}}</ion-label>
+        </ion-item>
+    </ion-list>
+
+    <ion-infinite-scroll threshold="150px" (ionInfinite)="onIonInfinite($event)">
+        <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Cargando..."></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

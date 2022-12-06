@@ -1,0 +1,98 @@
+<ion-content>
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Modal</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+        <ion-button id="open-modal" expand="block">Click</ion-button>
+
+        <ion-modal #modal trigger="open-modal">
+            <ng-template>
+                <ion-content>
+                    <ion-toolbar>
+                        <ion-title>Modal</ion-title>
+                        <ion-buttons slot="end">
+                            <ion-button color="light" (click)="modal.dismiss()">Cerrar</ion-button>
+                        </ion-buttons>
+                    </ion-toolbar>
+                    <ion-list>
+                        <ion-item>
+                            <ion-avatar slot="start">
+                                <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
+                            </ion-avatar>
+                            <ion-label>
+                                <h2>Luis Macias</h2>
+                                <p>Programador</p>
+                            </ion-label>
+                        </ion-item>
+                        <ion-item>
+                            <ion-avatar slot="start">
+                                <ion-img src="https://i.pravatar.cc/300?u=a"></ion-img>
+                            </ion-avatar>
+                            <ion-label>
+                                <h2>Fiorella Muñoz</h2>
+                                <p>Cantante</p>
+                            </ion-label>
+                        </ion-item>
+                        <ion-item>
+                            <ion-avatar slot="start">
+                                <ion-img src="https://i.pravatar.cc/300?u=d"></ion-img>
+                            </ion-avatar>
+                            <ion-label>
+                                <h2>Antonio Macias</h2>
+                                <p>Papá</p>
+                            </ion-label>
+                        </ion-item>
+                        <ion-item>
+                            <ion-avatar slot="start">
+                                <ion-img src="https://i.pravatar.cc/300?u=e"></ion-img>
+                            </ion-avatar>
+                            <ion-label>
+                                <h2>Angelita Bermeo</h2>
+                                <p>Mamá</p>
+                            </ion-label>
+                        </ion-item>
+                        <ion-item>
+                            <ion-avatar slot="start">
+                                <ion-img src="https://i.pravatar.cc/300?u=a"></ion-img>
+                            </ion-avatar>
+                            <ion-label>
+                                <h2>Gema Macias</h2>
+                                <p>Hermana</p>
+                            </ion-label>
+                        </ion-item>
+                        <ion-item>
+                            <ion-avatar slot="start">
+                                <ion-img src="https://i.pravatar.cc/300?u=d"></ion-img>
+                            </ion-avatar>
+                            <ion-label>
+                                <h2>Gregorio Macias</h2>
+                                <p>Hermano</p>
+                            </ion-label>
+                        </ion-item>
+                        <ion-item>
+                            <ion-avatar slot="start">
+                                <ion-img src="https://i.pravatar.cc/300?u=e"></ion-img>
+                            </ion-avatar>
+                            <ion-label>
+                                <h2>Eddy Macias</h2>
+                                <p>Hermano</p>
+                            </ion-label>
+                        </ion-item>
+                        <ion-item>
+                            <ion-avatar slot="start">
+                                <ion-img src="https://i.pravatar.cc/300?u=a"></ion-img>
+                            </ion-avatar>
+                            <ion-label>
+                                <h2>Gabriel Muñoz</h2>
+                                <p>Cuñado</p>
+                            </ion-label>
+                        </ion-item>
+
+                    </ion-list>
+                </ion-content>
+            </ng-template>
+        </ion-modal>
+    </ion-content>
+</ion-content>

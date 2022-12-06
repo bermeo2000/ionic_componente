@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>ion_input</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item counter="true">
+        <ion-label position="floating">Default Counter</ion-label>
+        <ion-input maxlength="8"></ion-input>
+    </ion-item>
+
+    <ion-item id="custom-item" counter="true" [counterFormatter]="customCounterFormatter">
+        <ion-label position="floating">Custom Counter Format</ion-label>
+        <ion-input maxlength="8"></ion-input>
+    </ion-item>
+</ion-content>
